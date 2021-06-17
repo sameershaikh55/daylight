@@ -5,7 +5,7 @@
   margin: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -243,7 +243,6 @@ input:focus {
 }
 
 .innerCont {
-  max-width: 600px;
   width: 100%;
   border-radius: 8px;
   width: 100%;
