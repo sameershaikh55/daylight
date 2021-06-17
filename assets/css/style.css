@@ -113,6 +113,14 @@ html {
   background: #dedede;
 }
 
+.tInp {
+  height: 20px;
+}
+
+.placeholderImg {
+  max-height: 150px;
+}
+
 #content-1, #content-2 {
   height: 500px;
   overflow-y: scroll;
@@ -209,6 +217,17 @@ input:focus {
 .webNews {
   height: 340px;
   overflow-y: auto;
+}
+
+.modal-dialog {
+  width: 90vw !important;
+  color: #dc1414;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 90vw !important;
+  }
 }
 
 .header_container {
@@ -343,5 +362,16 @@ input:focus {
   left: 5%;
   border-radius: 50%;
   border: 3px solid #dc1414;
+}
+
+@media screen and (max-width: 768px) {
+  .accountBanner img {
+    height: 60px;
+    width: 60px;
+    bottom: -30%;
+    left: 5%;
+    border-radius: 50%;
+    border: 3px solid #dc1414;
+  }
 }
 /*# sourceMappingURL=style.css.map */

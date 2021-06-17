@@ -116,6 +116,16 @@ html {
 .tab {
   background: #dedede;
 }
+
+.tInp{
+  height: 20px;
+}
+
+
+.placeholderImg {
+  max-height: 150px;
+}
+
 #content-1, #content-2 {
   height: 500px;
   overflow-y: scroll;
@@ -218,6 +228,19 @@ input {
   height: 340px;
   overflow-y: auto;
 }
+
+// HEADER CONTAINER START
+.modal-dialog {
+  width: 90vw !important;
+  color: $themeColor;
+}
+
+@media (min-width: 576px){
+  .modal-dialog {
+      max-width: 90vw !important;
+  }
+}
+// HEADER CONTAINER START
 
 // HEADER CONTAINER START
 .header_container {
@@ -364,6 +387,17 @@ input {
       left: 5%;
       border-radius: 50%;
       border: 3px solid $themeColor;
+    }
+
+    @media screen and (max-width: 768px) {
+      img {
+        height: 60px;
+        width: 60px;
+        bottom: -30%;
+        left: 5%;
+        border-radius: 50%;
+        border: 3px solid $themeColor;
+      }
     }
 }
 // ACCOUNT END
