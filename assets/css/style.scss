@@ -96,10 +96,92 @@ html {
   color: $themeColor;
 }
 
+.themeBg {
+  background: $themeColor;
+}
+
 .page_container {
   max-width: 1075px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.dot{
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  @include Bg;
+}
+
+.tab {
+  background: #dedede;
+}
+#content-1, #content-2 {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+#content-1 {
+  display: flex;
+}
+
+#content-2 {
+  display: none;
+}
+
+.rightSideA {
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.bannerContainer {
+  transition: 0.8s all;
+}
+
+.hoveredBanned {
+  transition: 0.8s all;
+  background: linear-gradient(
+    22deg,
+    rgba(220, 20, 20, 1) 27%,
+    rgba(255, 45, 45, 0.9976365546218487) 52%
+  );
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1rem;
+  left: 10%;
+  top: 0%;
+  z-index: 999;
+  display: none;
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+
+.bannerContainer:hover .hoveredBanned {
+  transition: 0.8s all;
+  display: block;
+  opacity: 1;
+  width: 150px;
+  height: 128px;
+}
+
+.tab{
+  .active {
+    position: relative;
+    transition: 0.5s;
+   
+    &:before {
+      content: "";
+      position: absolute;
+      height: 8%;
+      width: 100%;
+      left: 0%;
+      bottom: 0%;
+      right: 0%;
+      background-color: $themeColor;
+    }
+  }
 }
 
 .themeBtn {
@@ -270,3 +352,18 @@ input {
   background: #fff;
 }
 // HOME END
+
+// ACCOUNT START
+.accountBanner {
+  height: 120px;
+
+    img {
+      height: 80px;
+      width: 80px;
+      bottom: -30%;
+      left: 5%;
+      border-radius: 50%;
+      border: 3px solid $themeColor;
+    }
+}
+// ACCOUNT END

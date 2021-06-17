@@ -12,3 +12,24 @@ const closeSidebar = () => {
 	sidebar.style.opacity = "0";
 	sidebar.style.transition = "1s all";
 };
+
+
+const c1 = document.getElementById("content-1");
+const c2 = document.getElementById("content-2");
+const t1 = document.getElementById("tab-1");
+const t2 = document.getElementById("tab-2");
+
+t1.addEventListener("click", () => {
+	t1.classList.add("active");
+	t2.classList.remove("active");
+	c2.style.display = "none";
+	c1.style.display = "flex";
+});
+
+t2.addEventListener("click", () => {
+	t2.classList.add("active");
+	t1.classList.remove("active");
+	c1.style.display = "none";
+	c2.style.display = "flex";
+});
+
