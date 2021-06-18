@@ -139,6 +139,14 @@ html {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  #content-1, #content-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .rightSideA {
   height: 350px;
   overflow-y: scroll;
@@ -400,4 +408,10 @@ input {
       }
     }
 }
+
+.accBox {
+  height: 70px;
+  width: 70px;
+}
+
 // ACCOUNT END
