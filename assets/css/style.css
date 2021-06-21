@@ -256,7 +256,6 @@ input:focus {
 
 .modal-dialog {
   width: 90vw !important;
-  color: #dc1414;
 }
 
 @media (min-width: 576px) {
