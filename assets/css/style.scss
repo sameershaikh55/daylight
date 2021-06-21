@@ -403,9 +403,13 @@ input {
 
 // ACCOUNT START
 .accountBanner {
-	height: 120px;
+	height: 130px;
 
-	img {
+	.imgBanner {
+		object-fit: cover;
+	}
+
+	.person {
 		height: 80px;
 		width: 80px;
 		bottom: -30%;
@@ -415,7 +419,7 @@ input {
 	}
 
 	@media screen and (max-width: 768px) {
-		img {
+		.person {
 			height: 60px;
 			width: 60px;
 			bottom: -30%;

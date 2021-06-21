@@ -387,10 +387,15 @@ input:focus {
 }
 
 .accountBanner {
-  height: 120px;
+  height: 130px;
 }
 
-.accountBanner img {
+.accountBanner .imgBanner {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.accountBanner .person {
   height: 80px;
   width: 80px;
   bottom: -30%;
@@ -400,7 +405,7 @@ input:focus {
 }
 
 @media screen and (max-width: 768px) {
-  .accountBanner img {
+  .accountBanner .person {
     height: 60px;
     width: 60px;
     bottom: -30%;
